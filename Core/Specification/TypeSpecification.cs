@@ -8,5 +8,4 @@ public class TypeSpecification : BaseSpecification<Product, string>
         AddSelect(x => x.Type);
         ApplyDistinct();
     }
-
 }
