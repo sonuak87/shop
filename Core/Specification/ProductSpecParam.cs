@@ -29,10 +29,10 @@ public class ProductSpecParam
         }
     }
     public string? Sort { get; set; }
-    private string _search;
+    private string? _search;
     public string Search
     {
-        get => _search;
+        get => _search ?? "";
         set
         {
             _search = value.ToLower();
