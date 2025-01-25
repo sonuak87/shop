@@ -12,7 +12,11 @@ export class ShopService {
   private http = inject(HttpClient);
   type: string[] = [];
   brand: string[] = [];
-  
+
+  getProductById(id: number) {
+   return  this.http.get<Product>(this.baseUrl + 'products/'+id);
+  }
+
   getProduct(shopParams:SortParams) {
     let params = new HttpParams();
     console.log(shopParams);

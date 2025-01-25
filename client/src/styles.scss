@@ -24,3 +24,7 @@ $customTheme:mat.define-theme();
 // {
 // height: var(--mat-form-field-container-height-3) !important;
 // }
+
+.mdc-notched-outline__notch{
+    border-right-style: none!important
+}
