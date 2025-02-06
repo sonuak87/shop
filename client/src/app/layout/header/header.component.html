@@ -1,4 +1,6 @@
-<header class="border-b shadow-md p-3 w-full">
+<header
+  class="border-b shadow-md p-3 w-full max-h-20 fixed -mt-24 z-50 bg-white"
+>
   <div
     class="flex align-middle item-center justify-between max-w-screen-2xl mx-auto"
   >
@@ -6,7 +8,7 @@
       routerLink="/"
       src="/images/logo.png"
       alt="Shop logo"
-      class="max-h-16"
+      class="max-h-20"
     />
     <nav class="flex gap-3 my-2 uppercase text-2xl">
       <a
@@ -16,7 +18,7 @@
         >Home</a
       >
       <a routerLink="/shop" routerLinkActive="active">Contact</a>
-      <a routerLink="/home" routerLinkActive="active">About</a>
+      <a routerLink="/test-errors" routerLinkActive="active">error</a>
     </nav>
 
     <div class="flex gap-3 align-middle">
@@ -28,3 +30,6 @@
     </div>
   </div>
 </header>
+@if(busyService.loading){
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+}

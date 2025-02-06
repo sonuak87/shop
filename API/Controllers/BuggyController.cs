@@ -30,7 +30,7 @@ namespace API.Controllers
             return NotFound();
         }
 
-        [HttpGet("validationerror")]
+        [HttpPost("validationerror")]
         public ActionResult GetValidationError(Product product)
         {
             return Ok();
